@@ -1,6 +1,12 @@
 #Simple script that downloads videos from youtube.
 #Usage: $ python3 stube.py URL_OF_YOUTUBE_VIDEO
 
+#If the dependency pytube does not work correctly try this:
+#Go in the cipher.py from pytube and replace line 30, which is:
+#var_regex = re.compile(r"^\w+\W")
+#Replace with:
+#var_regex = re.compile(r"^\$*\w+\W")
+
 #Imports
 import sys
 from pytube import YouTube
