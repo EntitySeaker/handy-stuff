@@ -1,0 +1,14 @@
+#Creating a new Git Private Repo on the command line#
+
+#=================================#
+git config  user.email YOUR_EMAIL
+git config  user.name YOUR_USERNAME
+#=================================#
+curl -u YOUR_USERNAME https://api.github.com/user/repos -d '{"name":REPO_NAME, "private":"true"}'
+git remote add origin git@github.com/YOUR_USERNAME/REPO_NAME.git
+git init REPO_NAME
+touch README.md
+git add README.md
+git commit -m "initial commit"
+git push origin master
+
