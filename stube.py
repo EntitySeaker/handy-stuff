@@ -1,3 +1,6 @@
+#Simple script that downloads videos from youtube.
+#Usage: $ python3 stube.py URL_OF_YOUTUBE_VIDEO
+
 #Imports
 import sys
 from pytube import YouTube
